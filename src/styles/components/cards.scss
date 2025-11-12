@@ -12,7 +12,32 @@ h2 {
     margin: 0;
 
     font-weight: 100;
-    .bold {
-        font-weight: 600;
+    
+}
+
+
+.labos .card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.card__media {
+    img {
+        border-radius: 16px;
     }
+}
+
+.card__content {
+    p {
+        font-weight: 100;
+    }
+}
+
+
+
+.bold {
+    font-weight: 600;
 }
