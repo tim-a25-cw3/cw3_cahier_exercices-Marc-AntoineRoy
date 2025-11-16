@@ -1,0 +1,32 @@
+.button-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: fit-content;
+    padding: 8px 16px;
+    border-radius: 100px;
+
+    background: var(--color-primary);
+
+    p {
+        margin: 0;
+
+        font-family: var(--font-secondary);
+        font-size: typo(16px);
+        font-weight: 700;
+
+        color: var(--color-black);
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        background: var(--color-white);
+        color: var(--color-black);
+
+        padding: 8px 24px;
+
+        transition: ease-in-out 0.67s;
+    }
+}

@@ -1,14 +1,19 @@
 .header {
-    .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     background: rgba(0, 0, 0, 0.6);
     color: var(--color-white);
+
+    font-size: typo(20px);
+    text-align: center;
+
+    padding: 25px 0;
 
     position: fixed;
     width: 100%;
     z-index: 999;
+
+    a:hover {
+        text-decoration: none;
+        color: var(--color-white);
+        cursor: pointer;
+    }
 }
