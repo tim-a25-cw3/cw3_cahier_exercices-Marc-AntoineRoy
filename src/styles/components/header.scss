@@ -1,16 +1,23 @@
 .header {
     background: rgba(0, 0, 0, 0.6);
-    color: var(--color-white);
 
-    font-size: typo(20px);
     text-align: center;
 
     padding: 25px 0;
 
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 2;
 
+    a {
+        color: var(--color-white);
+
+        font-size: typo(20px);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
     a:hover {
         text-decoration: none;
         color: var(--color-white);
