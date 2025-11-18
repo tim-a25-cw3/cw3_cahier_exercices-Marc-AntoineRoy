@@ -20,6 +20,7 @@ class Main {
 
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
   }
