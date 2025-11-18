@@ -22,7 +22,10 @@
     }
 
     @media (width <= $breakpoint-sm) {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: var(--spacing-sm);
     }
 }
 
@@ -35,6 +38,7 @@
     gap: 32px;
 
     font-family: var(--font-secondary);
+    color: rgba(250, 250, 250, 0.55);
 
     &:nth-child(even) {
         .card__content {
@@ -92,6 +96,7 @@
 }
 
 .bold {
+    color: var(--color-white);
     font-weight: 700;
 }
 
@@ -99,34 +104,46 @@
 
 .reactif {
     background: var(--color-primary);
-    color: var(--color-black);
+
+    .bold,
+    h2,
+    h3,
+    p {
+        color: var(--color-black);
+    }
 }
 
 .swiper-wrapper {
     .swiper-slide {
-        .card__media {
-            aspect-ratio: 594/490;
-            img {
-                display: block;
-
-                width: 100%;
-                height: 100%;
-                border-radius: 16px;
-
-                object-fit: cover;
-            }
-        }
-
         &:nth-child(even) {
             .card__content {
                 order: unset;
             }
         }
     }
-
     max-width: $breakpoint-lg;
 
     @media (width <= $breakpoint-md) {
-        max-width: $breakpoint-md;
+        max-width: 80vw;
     }
+
+    @media (width <= $breakpoint-sm) {
+        max-width: 90vw;
+    }
+}
+
+.swiper-pagination {
+    position: relative;
+
+    --swiper-pagination-bottom: -50px;
+
+    --swiper-pagination-bullet-horizontal-gap: 20px;
+}
+.swiper-pagination-bullet {
+    --swiper-pagination-bullet-inactive-color: var(--color-black);
+    --swiper-pagination-color: var(--color-white);
+
+    --swiper-pagination-bullet-size: 20px;
+    rotate: 45deg;
+    border-radius: 0;
 }

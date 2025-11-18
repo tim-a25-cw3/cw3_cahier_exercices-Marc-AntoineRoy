@@ -15,24 +15,11 @@ class Main {
   initSwiperCards() {
     const target = document.querySelector('.js-swiper-cards');
     const swiper = new Swiper(target, {
-      slidesPerView: 2,
+      slidesPerView: 1,
+      spaceBetween: 30,
 
       pagination: {
         el: '.swiper-pagination',
-      },
-
-      breakpoints: {
-        480: {
-          slidesPerView: 1,
-        },
-
-        768: {
-          slidesPerView: 2,
-        },
-
-        1024: {
-          slidesPerView: 1,
-        },
       },
     });
   }

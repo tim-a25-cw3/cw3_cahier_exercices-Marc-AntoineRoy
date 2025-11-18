@@ -37,5 +37,10 @@
     &:hover {
         background: var(--color-black);
         color: var(--color-white);
+
+        p {
+            color: var(--color-white);
+            transition: ease-in-out 0.67s;
+        }
     }
 }
